@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  
   <header>
     <div class="wrapperHead">
       <h1>MENTORIA</h1>
@@ -17,7 +18,8 @@
   </header>
 
   <form action="" id="mentorForm">
-    <div class="personalInfo">
+    <fieldset class="personalInfo">
+      <legend>Informações pessoais</legend>
       <div class="wrapperName">
         <label for="name">Nome</label>
         <input type="text" id="name">
@@ -28,32 +30,36 @@
       <input type="email" id="eMail">
       <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
       <input type="password">
-    </div>
+    </fieldset>
 
-    <div class="mentorInfo">
+    <fieldset class="mentorInfo">
+      <legend>Informações do mentor</legend>
       <label for="mentorName">Nome do seu mentor <span>(só o primeiro nome)</span></label>
       <input type="text" id="mentorName">
-    </div>
+    </fieldset>
 
-    <div class="schedules">
-      <div class="firstSchedule">
+    <fieldset class="schedules">
+      <legend>Seus horários disponíveis</legend>
+      <fieldset class="firstSchedule">
+        <legend>Primeira mentoria</legend>
         <label for="date">Data <span>(DD/MM/AAAA)</span></label>
         <input type="date" id="date">
         <label for="beggin">Das</label>
         <input type="time" id="beggin">
         <label for="finish">Até</label>
         <input type="time" id="finish">
-      </div>
+      </fieldset>
 
-      <div class="secondSchedule">
-        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
-        <input type="date" id="date">
+      <fieldset class="secondSchedule">
+        <legend>Segunda mentoria</legend>
+        <label for="sDate">Data <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="sDate">
         <label for="sBeggin">Das</label>
-        <input type="time" id="beggin">
+        <input type="time" id="sBeggin">
         <label for="sFinish">Até</label>
-        <input type="time" id="finish">
-      </div>
-    </div>
+        <input type="time" id="sFinish">
+      </fieldset>
+    </fieldset>
 
   </form>
 
