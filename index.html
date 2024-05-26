@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrapperHead">
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </div>
+  </header>
+
+  <form action="" id="mentorForm">
+    <div class="personalInfo">
+      <div class="wrapperName">
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+        <label for="surname">Sobrenome</label>
+        <input type="text" id="surname">
+      </div>
+      <label for="eMail">E-mail <span>(digite um email válido)</span></label>
+      <input type="email" id="eMail">
+      <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+      <input type="password">
+    </div>
+
+    <div class="mentorInfo">
+      <label for="mentorName">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+      <input type="text" id="mentorName">
+    </div>
+
+    <div class="schedules">
+      <div class="firstSchedule">
+        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="date">
+        <label for="beggin">Das</label>
+        <input type="time" id="beggin">
+        <label for="finish">Até</label>
+        <input type="time" id="finish">
+      </div>
+
+      <div class="secondSchedule">
+        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="date">
+        <label for="sBeggin">Das</label>
+        <input type="time" id="beggin">
+        <label for="sFinish">Até</label>
+        <input type="time" id="finish">
+      </div>
+    </div>
+
+  </form>
+
+  <div class="button"><button form="mentorForm">SALVAR</button></div>
+</body>
+
+</html>
