@@ -170,7 +170,41 @@ fieldset legend {
   width: 300px;
 }
 
-#beggin, #finish, #sBeggin, #sFinish {
+#beggin,
+#finish,
+#sBeggin,
+#sFinish {
   width: 140px;
 }
 
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 750px;
+  height: 160px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 52px 71px;
+  background-color: #535971;
+}
+
+button {
+  padding: 15px 40px;
+  background-color: #ff5374;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  border: none;
+}
+
+button:hover {
+  background-color: #e65a76;
+}
